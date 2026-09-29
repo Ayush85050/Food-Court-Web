@@ -280,7 +280,7 @@
       display: inline-block;
     }
 
-    /* SLIDE 14 (Thank You Slide) */
+    /* SLIDE 12 (Thank You Slide) */
     .thankyou-slide {
       justify-content: center;
       align-items: center;
@@ -351,7 +351,7 @@
   <div class="slide">
     <div class="header">
       <div class="header-title">🍕 Food Court MERN Platform</div>
-      <div class="header-badge">Slide 2 / 14</div>
+      <div class="header-badge">Slide 2 / 12</div>
     </div>
     <div class="content">
       <h2 class="title-large">Project Vision & Core Objectives</h2>
@@ -389,7 +389,7 @@
   <div class="slide">
     <div class="header">
       <div class="header-title">🗺️ User Journey & Workflow</div>
-      <div class="header-badge">Slide 3 / 14</div>
+      <div class="header-badge">Slide 3 / 12</div>
     </div>
     <div class="content">
       <h2 class="title-large">End-to-End User Journey (Start to End)</h2>
@@ -426,7 +426,7 @@
   <div class="slide">
     <div class="header">
       <div class="header-title">📝 User Registration Page</div>
-      <div class="header-badge">Slide 4 / 14</div>
+      <div class="header-badge">Slide 4 / 12</div>
     </div>
     <div class="content">
       <h2 class="title-large">User Signup Interface & Validation (`/createuser`)</h2>
@@ -471,7 +471,7 @@
   <div class="slide">
     <div class="header">
       <div class="header-title">🔐 Login & Security</div>
-      <div class="header-badge">Slide 5 / 14</div>
+      <div class="header-badge">Slide 5 / 12</div>
     </div>
     <div class="content">
       <h2 class="title-large">User Authentication & JWT Token (`/loginuser`)</h2>
@@ -513,7 +513,7 @@
   <div class="slide">
     <div class="header">
       <div class="header-title">🖼️ Home Interface</div>
-      <div class="header-badge">Slide 6 / 14</div>
+      <div class="header-badge">Slide 6 / 12</div>
     </div>
     <div class="content">
       <h2 class="title-large">Home Screen & Hero Carousel</h2>
@@ -557,7 +557,7 @@
   <div class="slide">
     <div class="header">
       <div class="header-title">🎛️ Interactive Filters</div>
-      <div class="header-badge">Slide 7 / 14</div>
+      <div class="header-badge">Slide 7 / 12</div>
     </div>
     <div class="content">
       <h2 class="title-large">Category Tabs & Diet Filters (Veg / Non-Veg)</h2>
@@ -584,7 +584,7 @@
             &nbsp;&nbsp;<span class="kw">const</span> matchCat = activeCategory === <span class="str">"All"</span> || <br/>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item.CategoryName === activeCategory;<br/>
             &nbsp;&nbsp;<span class="kw">let</span> isVeg = !item.name.<span class="fn">toLowerCase</span>().<span class="fn">match</span>(<span class="str">/chicken|pepperoni/</span>);<br/>
-            &nbsp;&nbsp;<span class="kw">return</span> matchCat &amp;&amp; (filterVeg === <span class="str">"All"</span> || (filterVeg===<span class="str">"Veg"</span> &amp;&amp; isVeg));<br/>
+            &nbsp;&nbsp;<span class="kw">return</span> matchCat &amp;&amp; (filterVeg === <span class="str">"All"</span> || (filterVeg === <span class="str">"Veg"</span> &amp;&amp; isVeg));<br/>
             });
           </div>
         </div>
@@ -600,7 +600,7 @@
   <div class="slide">
     <div class="header">
       <div class="header-title">🍱 Food Cards</div>
-      <div class="header-badge">Slide 8 / 14</div>
+      <div class="header-badge">Slide 8 / 12</div>
     </div>
     <div class="content">
       <h2 class="title-large">Food Cards & Portion Customization</h2>
@@ -645,7 +645,7 @@
   <div class="slide">
     <div class="header">
       <div class="header-title">🛒 State Reducer</div>
-      <div class="header-badge">Slide 9 / 14</div>
+      <div class="header-badge">Slide 9 / 12</div>
     </div>
     <div class="content">
       <h2 class="title-large">Global Cart Context Reducer (`ContextReducer.js`)</h2>
@@ -691,7 +691,7 @@
   <div class="slide">
     <div class="header">
       <div class="header-title">🏗️ System Architecture</div>
-      <div class="header-badge">Slide 10 / 14</div>
+      <div class="header-badge">Slide 10 / 12</div>
     </div>
     <div class="content">
       <h2 class="title-large">Full-Stack MERN Architecture Diagram</h2>
@@ -728,15 +728,15 @@
     </div>
   </div>
 
-  <!-- SLIDE 11: MongoDB Schema & Data Resilience -->
+  <!-- SLIDE 11: MongoDB Schema & Server Integration -->
   <div class="slide">
     <div class="header">
-      <div class="header-title">🗄️ Database Schemas</div>
-      <div class="header-badge">Slide 11 / 14</div>
+      <div class="header-title">🗄️ Database & Server Integration</div>
+      <div class="header-badge">Slide 11 / 12</div>
     </div>
     <div class="content">
-      <h2 class="title-large">MongoDB Schemas & Failover Resilience</h2>
-      <p class="subtitle">Document model definition and database connectivity handler (`server/models/User.js`).</p>
+      <h2 class="title-large">MongoDB Schemas & Express Server Entry</h2>
+      <p class="subtitle">Document models and single-port Express server distribution.</p>
 
       <div class="grid-2-equal">
         <div class="card-box">
@@ -746,40 +746,12 @@
             &nbsp;&nbsp;name: { <span class="kw">type</span>: String, required: <span class="kw">true</span> },<br/>
             &nbsp;&nbsp;email: { <span class="kw">type</span>: String, required: <span class="kw">true</span>, unique: <span class="kw">true</span> },<br/>
             &nbsp;&nbsp;password: { <span class="kw">type</span>: String, required: <span class="kw">true</span> },<br/>
-            &nbsp;&nbsp;location: { <span class="kw">type</span>: String, required: <span class="kw">true</span> },<br/>
-            &nbsp;&nbsp;date: { <span class="kw">type</span>: Date, default: Date.now }<br/>
+            &nbsp;&nbsp;location: { <span class="kw">type</span>: String, required: <span class="kw">true</span> }<br/>
             });<br/>
             module.exports = mongoose.<span class="fn">model</span>(<span class="str">"user"</span>, UserSchema);
           </div>
         </div>
 
-        <div class="card-box">
-          <h3>⚡ Failover Resilience</h3>
-          <ul class="feature-list">
-            <li>Automatic connection retry timeout configured at 5000ms.</li>
-            <li>Includes fallback food dataset initialization ensuring 100% demo availability.</li>
-            <li>No SQL injection vulnerabilities due to Mongoose ORM parameter sanitization.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer">
-      <span>Food Court MERN Stack Project</span>
-      <span>Author: Ayush Sharma</span>
-    </div>
-  </div>
-
-  <!-- SLIDE 12: Express Backend Server Entry Point -->
-  <div class="slide">
-    <div class="header">
-      <div class="header-title">⚙️ Backend Server</div>
-      <div class="header-badge">Slide 12 / 14</div>
-    </div>
-    <div class="content">
-      <h2 class="title-large">Express Server Entry Point (`server/index.js`)</h2>
-      <p class="subtitle">Serving API routes and integrated client static build distribution.</p>
-
-      <div class="grid-2-equal">
         <div class="card-box">
           <h3>💻 Server Index Code</h3>
           <div class="code-container">
@@ -789,21 +761,10 @@
             app.<span class="fn">use</span>(express.<span class="fn">json</span>());<br/>
             app.<span class="fn">use</span>(<span class="str">"/api"</span>, <span class="fn">require</span>(<span class="str">"./Routes/CreateUser"</span>));<br/>
             app.<span class="fn">use</span>(<span class="str">"/api"</span>, <span class="fn">require</span>(<span class="str">"./Routes/DisplayData"</span>));<br/>
-            <br/>
-            <span class="cm">// Static serve React Build</span><br/>
             app.<span class="fn">use</span>(express.<span class="fn">static</span>(path.<span class="fn">join</span>(__dirname, <span class="str">"../client/build"</span>)));<br/>
             app.<span class="fn">listen</span>(<span class="num">5000</span>, () =&gt; console.<span class="fn">log</span>(<span class="str">"Server Running"</span>));
           </div>
         </div>
-
-        <div class="card-box">
-          <h3>🌐 Production Hosting Highlights</h3>
-          <ul class="feature-list">
-            <li>Single port hosting (Port 5000) for both API endpoints and React UI assets.</li>
-            <li>CORS headers enabled for cross-origin client requests.</li>
-            <li>Clean separation of concerns with modular Express router files.</li>
-          </ul>
-        </div>
       </div>
     </div>
     <div class="footer">
@@ -812,43 +773,7 @@
     </div>
   </div>
 
-  <!-- SLIDE 13: Project Metrics & Future Scope -->
-  <div class="slide">
-    <div class="header">
-      <div class="header-title">📈 Metrics & Roadmap</div>
-      <div class="header-badge">Slide 13 / 14</div>
-    </div>
-    <div class="content">
-      <h2 class="title-large">Project Metrics & Future Scope</h2>
-      <p class="subtitle">System benchmarks and planned production extensions.</p>
-
-      <div class="grid-2-equal">
-        <div class="card-box">
-          <h3>📊 System Performance</h3>
-          <ul class="feature-list">
-            <li><strong>Page Load Time:</strong> &lt; 1.2 seconds with optimized gzipped React build.</li>
-            <li><strong>Client Bundle Size:</strong> ~134 kB production bundle.</li>
-            <li><strong>API Response Time:</strong> &lt; 50ms query latency on MongoDB Atlas cloud.</li>
-          </ul>
-        </div>
-
-        <div class="card-box">
-          <h3>🔮 Future Enhancements</h3>
-          <ul class="feature-list">
-            <li><strong>Digital Payments:</strong> Razorpay / Stripe payment gateway integration.</li>
-            <li><strong>Real-Time Tracking:</strong> WebSockets (Socket.io) for live order updates.</li>
-            <li><strong>Admin Dashboard:</strong> Restaurant panel for real-time menu management.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer">
-      <span>Food Court MERN Stack Project</span>
-      <span>Author: Ayush Sharma</span>
-    </div>
-  </div>
-
-  <!-- SLIDE 14: Thank You (Website Style) -->
+  <!-- SLIDE 12: Thank You (Website Style) -->
   <div class="slide thankyou-slide">
     <div class="thankyou-card">
       <div style="margin-bottom: 1.5rem;">

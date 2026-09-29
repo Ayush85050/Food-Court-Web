@@ -1,4 +1,4 @@
-# 🍕 Food Court MERN Application — 14-Slide College Presentation
+# 🍕 Food Court MERN Application — 12-Slide College Presentation
 
 **Presenter:** Ayush Sharma  
 **Repository:** [Ayush85050/Food-Court-Web](https://github.com/Ayush85050/Food-Court-Web)  
@@ -117,9 +117,8 @@ const reducer = (state, action) => {
 
 ---
 
-## 📌 Slide 11: MongoDB Mongoose Schemas & Resilience
-- **User Document Model:** Name, Email, Password, Location, Date.
-- **Minimal Code Snippet:**
+## 📌 Slide 11: MongoDB Schema & Server Integration
+- **User Document Schema & Express Entry Code Snippet:**
 ```javascript
 const UserSchema = new Schema({
     name: { type: String, required: true },
@@ -127,15 +126,7 @@ const UserSchema = new Schema({
     password: { type: String, required: true },
     location: { type: String, required: true }
 });
-module.exports = mongoose.model("user", UserSchema);
-```
 
----
-
-## 📌 Slide 12: Express Server & Integrated Frontend Serving
-- **Static Asset Distribution:** Serves compiled `client/build` static files on port 5000.
-- **Minimal Code Snippet:**
-```javascript
 app.use(express.json());
 app.use("/api", require("./Routes/CreateUser"));
 app.use("/api", require("./Routes/DisplayData"));
@@ -145,14 +136,7 @@ app.listen(5000, () => console.log("Server Running"));
 
 ---
 
-## 📌 Slide 13: Project Metrics & Future Scope
-- **Page Load Speed:** < 1.2 seconds.
-- **Bundle Size:** ~134 kB production React build.
-- **Future Roadmap:** Razorpay/Stripe payment gateway integration, WebSockets real-time tracking, Admin Dashboard.
-
----
-
-## 📌 Slide 14: Thank You, Foodies! 🍕❤️ (Website Styled)
+## 📌 Slide 12: Thank You, Foodies! 🍕❤️ (Website Styled)
 - **Presenter:** Ayush Sharma
 - **GitHub Repo:** [https://github.com/Ayush85050/Food-Court-Web](https://github.com/Ayush85050/Food-Court-Web)
 - **Live Demo:** [http://localhost:5000/](http://localhost:5000/)
