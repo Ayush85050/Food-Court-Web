@@ -17,7 +17,7 @@ console.log("cart",data)
 
 async function handleCheckOut(event) {
     
-    const response = await fetch("http://localhost:5000/api/cartorderdata", {
+    const response = await fetch("/api/cartorderdata", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

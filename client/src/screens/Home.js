@@ -12,17 +12,21 @@ export default function Home() {
   const [foodItem, setFoodItem] = useState([])
 
   async function loadData() {
-    let response = await fetch("http://localhost:5000/api/foodData", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
+    try {
+      let response = await fetch("/api/foodData", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        }
+      });
+      response = await response.json();
+      if (response && Array.isArray(response) && response.length >= 2) {
+        setFoodCat(response[1] || []);
+        setFoodItem(response[0] || []);
       }
-    });
-    response = await response.json();
-
-    setFoodCat(response[1]);
-    setFoodItem(response[0]);
-
+    } catch (e) {
+      console.error("Failed to load food data:", e);
+    }
   }
 
   useEffect(() => {

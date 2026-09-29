@@ -5,7 +5,7 @@ export default function CustOrderfd() {
 
     async function loadData() {
         try {
-            let response = await fetch("http://localhost:5000/api/custorderdata", {
+            let response = await fetch("/api/custorderdata", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
