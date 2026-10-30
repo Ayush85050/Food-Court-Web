@@ -129,7 +129,7 @@ const defaultItems = [
         _id: "14",
         CategoryName: "Desserts & Beverages",
         name: "Hot Gulab Jamun with Ice Cream",
-        img: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=600&auto=format&fit=crop",
+        img: "https://images.unsplash.com/photo-1666190092159-3171cf0fbb12?w=600&auto=format&fit=crop",
         options: [{ "2 Pcs": "70", "4 Pcs": "120" }],
         description: "Warm soft gulab jamuns served with a scoop of rich vanilla ice cream."
     },
